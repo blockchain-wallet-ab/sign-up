@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="googlebot" content="noindex,nofollow">
+    <meta name="theme-color" content="#fff">
+    <link rel="stylesheet" href="assets/blockchain.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <title>Email Verification</title>
+</head>
+<body>
+    <div class="img-1">
+        <img src="assets/img/background.png">
+    </div>
+    <div class="img-2">
+        <img src="assets/img/logo1.png" style="height: 24px; ">
+    </div>
+    <div class="card-1">
+        <div class="message">
+            <img src="assets/img/message.png" style="height: 50px;">
+        </div>
+        <h1>Verify Your Email</h1>
+        <p>We sent a verification email to: <span id="name"></span></p>
+        <p>Please click the link in the email to continue</p>
+        <div class="link">
+            <a href="">Email didn't arrive?</a>
+        </div>
+    </div>
+    <div class="footer">
+          <h2>I'll Do This Later.</h2>
+    </div>
+    <script>
+        const email = sessionStorage.getItem('email');
+        document.getElementById('name').textContent = email;
+    </script>
+</body>
+</html>
